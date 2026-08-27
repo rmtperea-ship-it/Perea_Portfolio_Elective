@@ -342,271 +342,250 @@
 
 
 
-
-
-
-<!-- =================================
-     ACTIVITY NAVIGATION
-================================= -->
-
-<nav class="activity-nav" id="activity">
-
-    <button
-        type="button"
-        class="nav-btn active"
-        data-target="quizSection">
-        QUIZ
-    </button>
-
-    <button
-        type="button"
-        class="nav-btn"
-        data-target="examSection">
-        EXAM
-    </button>
-
-    <button
-        type="button"
-        class="nav-btn"
-        data-target="labSection">
-        LAB
-    </button>
-
-</nav>
-
-
-<!-- =================================
-     QUIZ
-================================= -->
-
-<section
-    class="activity-section active"
-    id="quizSection">
-
-    <h2>QUIZ</h2>
-
-    <label class="attach-button">
-
-        <i class="fa-solid fa-paperclip"></i>
-
-        ATTACH
-
-        <input
-            type="file"
-            id="quizInput"
-            accept="image/*,.pdf"
-            multiple>
-
-    </label>
-
-    <div
-        class="cards-scroll"
-        id="quizScroll">
-
-        <div
-            class="cards"
-            id="quizCards">
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =================================
-     EXAM
-================================= -->
-
-<section
-    class="activity-section exam-section"
-    id="examSection">
-
-    <h2>EXAM</h2>
-
-    <label class="attach-button">
-
-        <i class="fa-solid fa-paperclip"></i>
-
-        ATTACH
-
-        <input
-            type="file"
-            id="examInput"
-            accept="image/*,.pdf"
-            multiple>
-
-    </label>
-
-    <div class="exam-cards">
-
-        <!-- PRELIM -->
-
-        <div class="exam-card">
-
-            <div class="exam-file"></div>
-
-            <span>PRELIM</span>
-
-        </div>
-
-
-        <!-- MIDTERM -->
-
-        <div class="exam-card">
-
-            <div class="exam-file"></div>
-
-            <span>MIDTERM</span>
-
-        </div>
-
-
-        <!-- FINAL -->
-
-        <div class="exam-card">
-
-            <div class="exam-file"></div>
-
-            <span>FINAL</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =================================
-     LABORATORY
-================================= -->
-
-<section
-    class="activity-section"
-    id="labSection">
-
-    <h2>LABORATORY</h2>
-
-    <label class="attach-button">
-
-        <i class="fa-solid fa-paperclip"></i>
-
-        ATTACH
-
-        <input
-            type="file"
-            id="labInput"
-            accept="image/*,.pdf"
-            multiple>
-
-    </label>
-
-    <div
-        class="cards-scroll"
-        id="labScroll">
-
-        <div
-            class="cards"
-            id="labCards">
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =================================
-     IMAGE VIEWER
-================================= -->
-
-<div
-    class="file-viewer"
-    id="fileViewer">
-
-    <div class="viewer-content">
-
-        <button
-            type="button"
-            class="close-viewer"
-            id="closeViewer">
-
-            <i class="fa-solid fa-xmark"></i>
-
-        </button>
-
-        <img
-            id="viewerImage"
-            src=""
-            alt="Preview">
-
-    </div>
-
-</div>
-
-
-<!-- =================================
-     DELETE PASSWORD
-================================= -->
-
-<div
-    class="password-modal"
-    id="passwordModal">
-
-    <div class="password-box">
-
-        <button
-            type="button"
-            class="close-password"
-            id="closePassword">
-
-            <i class="fa-solid fa-xmark"></i>
-
-        </button>
-
-        <i class="fa-solid fa-lock password-icon"></i>
-
-        <h3>DELETE FILE</h3>
-
-        <p>
-            Enter password to delete this file.
-        </p>
-
-        <input
-            type="password"
-            id="deletePassword"
-            placeholder="Password"
-            autocomplete="off">
-
-        <div
-            class="password-error"
-            id="passwordError">
-
-            Incorrect password.
-
-        </div>
-
-        <button
-            type="button"
-            class="confirm-delete"
-            id="confirmDelete">
-
-            DELETE
-
-        </button>
-
-    </div>
-
-</div>
-
-
-<!-- =================================
-     JAVASCRIPT
-================================= -->
-
-<script src="activity.js"></script>
-
-</body>
-</html> 
-
-
-
+<!-- ================================= 
+     ELECTIVE NAVIGATION 
+================================= --> 
  
+<nav class="elective-nav" id="activity"> 
+ 
+    <button class="nav-btn active" data-target="quizSection"> 
+        QUIZ 
+    </button> 
+ 
+    <button class="nav-btn" data-target="examSection"> 
+        EXAM 
+    </button> 
+ 
+    <button class="nav-btn" data-target="labSection"> 
+        LAB 
+    </button> 
+ 
+</nav> 
+ 
+ 
+        <!-- ================================= 
+             QUIZ 
+        ================================== --> 
+ 
+        <section class="elective-section" id="quizSection"> 
+ 
+            <h2>QUIZ</h2> 
+ 
+            <label class="attach-button"> 
+ 
+                <i class="fa-solid fa-paperclip"></i> 
+ 
+                ATTACH 
+ 
+                <input 
+                    type="file" 
+                    id="quizInput" 
+                    accept="image/*,.pdf" 
+                    multiple> 
+ 
+            </label> 
+ 
+ 
+            <div class="cards-scroll" id="quizScroll"> 
+ 
+                <div class="cards" id="quizCards"></div> 
+ 
+            </div> 
+ 
+        </section> 
+ 
+ 
+ 
+        <!-- ================================= 
+             EXAM 
+        ================================== --> 
+ 
+        <section class="elective-section exam-section" id="examSection"> 
+ 
+            <h2>EXAM</h2> 
+ 
+            <label class="attach-button"> 
+ 
+                <i class="fa-solid fa-paperclip"></i> 
+ 
+                ATTACH 
+ 
+                <input 
+                    type="file" 
+                    id="examInput" 
+                    accept="image/*,.pdf" 
+                    multiple> 
+ 
+            </label> 
+ 
+ 
+            <div class="exam-cards"> 
+ 
+                <!-- PRELIM --> 
+ 
+                <div class="exam-card"> 
+ 
+                    <div class="exam-file"></div> 
+ 
+                    <span>PRELIM</span> 
+ 
+                </div> 
+ 
+ 
+                <!-- MIDTERM --> 
+ 
+                <div class="exam-card"> 
+ 
+                    <div class="exam-file"></div> 
+ 
+                    <span>MIDTERM</span> 
+ 
+                </div> 
+ 
+ 
+                <!-- FINAL --> 
+ 
+                <div class="exam-card"> 
+ 
+                    <div class="exam-file"></div> 
+ 
+                    <span>FINAL</span> 
+ 
+                </div> 
+ 
+            </div> 
+ 
+        </section> 
+ 
+ 
+ 
+        <!-- ================================= 
+             LABORATORY 
+        ================================== --> 
+ 
+        <section class="elective-section" id="labSection"> 
+ 
+            <h2>LABORATORY</h2> 
+ 
+            <label class="attach-button"> 
+ 
+                <i class="fa-solid fa-paperclip"></i> 
+ 
+                ATTACH 
+ 
+                <input 
+                    type="file" 
+                    id="labInput" 
+                    accept="image/*,.pdf" 
+                    multiple> 
+ 
+            </label> 
+ 
+ 
+            <div class="cards-scroll" id="labScroll"> 
+ 
+                <div class="cards" id="labCards"></div> 
+ 
+            </div> 
+ 
+        </section> 
+ 
+    </main> 
+ 
+ 
+ 
+    <!-- ================================= 
+         IMAGE VIEWER 
+    ================================== --> 
+ 
+    <div class="file-viewer" id="fileViewer"> 
+ 
+        <div class="viewer-content"> 
+ 
+            <button 
+                class="close-viewer" 
+                id="closeViewer"> 
+ 
+                <i class="fa-solid fa-xmark"></i> 
+ 
+            </button> 
+ 
+ 
+            <img 
+                id="viewerImage" 
+                src="" 
+                alt="Preview"> 
+ 
+        </div> 
+ 
+    </div> 
+ 
+ 
+ 
+    <!-- ================================= 
+         DELETE PASSWORD 
+    ================================== --> 
+ 
+    <div class="password-modal" id="passwordModal"> 
+ 
+        <div class="password-box"> 
+ 
+            <button 
+                class="close-password" 
+                id="closePassword"> 
+ 
+                <i class="fa-solid fa-xmark"></i> 
+ 
+            </button> 
+ 
+ 
+            <i class="fa-solid fa-lock password-icon"></i> 
+ 
+ 
+            <h3>DELETE FILE</h3> 
+ 
+ 
+            <p> 
+                Enter password to delete this file. 
+            </p> 
+ 
+ 
+            <input 
+                type="password" 
+                id="deletePassword" 
+                placeholder="Password" 
+                autocomplete="off"> 
+ 
+ 
+            <div 
+                class="password-error" 
+                id="passwordError"> 
+ 
+                Incorrect password. 
+ 
+            </div> 
+ 
+ 
+            <button 
+                class="confirm-delete" 
+                id="confirmDelete"> 
+ 
+                DELETE 
+ 
+            </button> 
+ 
+        </div> 
+ 
+    </div> 
+ 
+ 
+ 
+    <!-- ================================= 
+         JAVASCRIPT 
+    ================================== --> 
+ 
+     
+</body> 
+</html>
+
+
