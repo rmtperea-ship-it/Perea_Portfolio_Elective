@@ -2784,9 +2784,10 @@ body {
 
 .exam-file img {
 
-  .exam-file {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+
+    height: 100%;
+
     object-fit: cover;
 
 }
